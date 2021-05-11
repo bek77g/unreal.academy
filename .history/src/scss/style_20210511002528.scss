@@ -1,0 +1,87 @@
+@import url(../fonts/inter/stylesheet.css);
+@import "../libs/bs/bootstrap-grid.min.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1240px;
+}
+
+$inter: "Inter", sans-serif;
+
+@mixin text($ff, $ft, $fw, $fs, $lh, $cr) {
+  font-family: $ff;
+  font-style: $ft;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  color: $cr;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+ul {
+  list-style: none;
+}
+
+.close-btn {
+  width: 23px;
+  position: relative;
+  background: transparent;
+  height: 3px;
+  cursor: pointer;
+  &::before {
+    content: "";
+    position: absolute;
+    border-radius: 100px;
+    width: 100%;
+    height: 100%;
+    background: #6562db;
+    transform: rotate(45deg);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    border-radius: 100px;
+    width: 100%;
+    height: 100%;
+    background: #6562db;
+    transform: rotate(-45deg);
+  }
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+.go-top {
+  display: none;
+  width: 67px;
+  height: 67px;
+  position: fixed;
+  right: 67px;
+  bottom: 60px;
+  z-index: 8000;
+}
+
+@import "header";
+@import "home";
+@import "video";
+@import "courses";
+@import "features";
+@import "devstart";
+@import "exs";
+@import "lector";
+@import "certificate";
+@import "challange";
+@import "slider";
+@import "basket";
+@import "faq";
+@import "footer";
+@import "media";

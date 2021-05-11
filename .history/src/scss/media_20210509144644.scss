@@ -1,0 +1,72 @@
+@media (max-width: 1300px) {
+  .features::before {
+    bottom: -35%;
+    right: 0;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+  .devstart__row {
+    width: 77%;
+  }
+  .certificate__title {
+    font-size: 35px;
+  }
+  .certificate__des {
+    font-size: 16px;
+  }
+  .certificate__sub-title {
+    font-size: 17px;
+  }
+  .certificate__sub-cov {
+    font-size: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    max-width: 960px;
+  }
+  .courses__col {
+    padding: 17px 30px 17px 25px;
+  }
+  .courses__playbtn {
+    padding: 17px 50px 17px 25px;
+  }
+  .certificate__col:last-child,
+  .certificate__title,
+  .certificate__des,
+  .certificate__sub {
+    text-align: center;
+  }
+
+  .devstart__card {
+    width: 400px;
+    margin: 0 auto;
+  }
+  .features::before {
+    content: "";
+    background: url(../images/features/bfF.svg) top center/100% 100% no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 35%;
+    right: 0;
+    z-index: -1;
+    bottom: -70px;
+  }
+  .features__mcol:last-child {
+    margin: 47px auto 0;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}

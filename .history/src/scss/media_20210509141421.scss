@@ -1,0 +1,39 @@
+@media (max-width: 1300px) {
+  .features::before {
+    bottom: -35%;
+    right: 0;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+  .devstart__row {
+    width: 77%;
+  }
+}
+@media (max-width: 991px) {
+  .courses__col {
+    padding: 17px 30px 17px 25px;
+  }
+  .courses__playbtn {
+    padding: 17px 50px 17px 25px;
+  }
+  .devstart__row {
+    width: 57%;
+  }
+  .features::before {
+    content: "";
+    background: url(../images/features/bfF.svg) top center/100% 100% no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 35%;
+    right: 0;
+    z-index: -1;
+    bottom: -70px;
+  }
+  .features__mcol:last-child {
+    margin: 47px auto 0;
+  }
+}

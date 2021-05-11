@@ -1,0 +1,15 @@
+.basket {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.basket__card {
+  width: 841px;
+  height: 849px;
+  background: #fff;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+.basket__header {
+  background: #8482ff;
+}

@@ -1,0 +1,70 @@
+.footer {
+  background: #1a1b30;
+  padding: 45px 0 32px;
+  position: relative;
+  &::before {
+    content: "";
+    background: url(../images/footer/footBG.svg) top center/100% 100% no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo {
+    @include text($inter, normal, normal, 13px, 21px, #8482ff);
+    &-part {
+      color: #fff;
+    }
+    &-txt {
+      @include text($inter, normal, normal, 14px, 17px, #8482ff);
+      width: 123px;
+      margin-top: 24px;
+      &-part2 {
+        margin-top: 10px;
+      }
+    }
+  }
+  &__mnu {
+    display: flex;
+    margin-top: 3px;
+    column-gap: 25px;
+    &-item a {
+      @include text($inter, normal, normal, 16px, 19px, #fff);
+    }
+  }
+  &__crs {
+    display: flex;
+    margin: 26px;
+    &-rt {
+      @include text($inter, normal, normal, 14px, 17px, #8482ff);
+      text-decoration-line: underline;
+      margin-right: 25px;
+      &:last-child {
+        color: #ff9882;
+        margin-right: 0;
+      }
+    }
+  }
+  &__socs {
+    width: 79px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__dropper {
+    position: relative;
+  }
+  &__dropdown {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #8482ff;
+    width: 150px;
+    top: 20px;
+    display: none;
+  }
+  &__dropdown li a {
+    width: 100%;
+  }
+}

@@ -1,0 +1,107 @@
+.slider {
+  padding: 60px;
+  background: #3e416d;
+  .container {
+    position: relative;
+  }
+  &__title {
+    @include text($inter, normal, bold, 40px, 48px, #fff);
+    text-align: center;
+    margin-bottom: 197px;
+  }
+  &__items {
+    @include text($inter, normal, 500, 18px, 22px, #8482ff);
+    display: inline-block;
+    border: 1px solid #8482ff;
+    border-radius: 10px;
+    position: absolute;
+    &-or {
+      color: #ff9882;
+      background: #88635b;
+      border: 1px solid #ff9882;
+    }
+    &-opa {
+      background: #4b508d;
+    }
+    &:nth-child(2) {
+      left: 10px;
+      top: 24%;
+      padding: 10px 23px;
+      opacity: 0.5;
+    }
+    &:nth-child(3) {
+      padding: 10px 23px;
+      left: 7%;
+      top: 35%;
+    }
+    &:nth-child(4) {
+      padding: 10px 30px;
+      right: 460px;
+      top: 35%;
+    }
+    &:nth-child(5) {
+      padding: 10px 30px;
+      right: 290px;
+      top: 24%;
+    }
+    &:nth-child(6) {
+      padding: 10px 15px;
+      right: 10px;
+      top: 35%;
+    }
+    &:nth-child(9) {
+      padding: 10px 25px;
+      left: 10px;
+      bottom: -11%;
+    }
+    &:nth-child(10) {
+      padding: 10px 20px;
+      left: 195px;
+      bottom: -11%;
+    }
+    &:nth-child(11) {
+      padding: 10px 18px;
+      left: 250px;
+      bottom: -22%;
+      opacity: 0.5;
+    }
+    &:nth-child(12) {
+      padding: 10px 20px;
+      left: 413px;
+      bottom: -22%;
+      opacity: 0.2;
+    }
+    &:nth-child(13) {
+      padding: 10px 20px;
+      right: 480px;
+      bottom: -11%;
+    }
+    &:nth-child(14) {
+      padding: 10px 20px;
+      right: 10px;
+      bottom: -11%;
+    }
+  }
+  &__img {
+    &-txt {
+      @include text($inter, normal, bold, 40px, 48px, #fff);
+      position: absolute;
+      left: 50px;
+      top: 43%;
+      text-align: center;
+    }
+  }
+}
+
+.swiper-container {
+  width: 100%;
+  border-radius: 10px;
+}
+.swiper-scrollbar {
+  left: 33%;
+  top: 10px;
+  margin-bottom: 254px;
+  z-index: 50;
+  height: 10px;
+  width: 35%;
+}

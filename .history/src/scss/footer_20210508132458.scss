@@ -1,0 +1,12 @@
+.footer {
+  background: #1a1b30;
+  height: 324px;
+  position: relative;
+  &::before {
+    content: "";
+    background-image: url(../images/footer/footBG.svg);
+    top: 116px;
+    left: 369px;
+    position: absolute;
+  }
+}

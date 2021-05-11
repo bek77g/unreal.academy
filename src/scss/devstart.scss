@@ -1,0 +1,164 @@
+.devstart {
+  padding: 67px 0 38px;
+  background: #3e416d;
+  position: relative;
+  &__bg {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/devstart/и.svg);
+  }
+  &__mcol {
+    margin-top: 40px;
+  }
+  &__row {
+    width: 64%;
+    margin: 0 auto;
+  }
+  &__title {
+    @include text($inter, normal, bold, 40px, 48px, #fff);
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  &__card {
+    border-radius: 10px;
+    background: #fff;
+    height: 100%;
+  }
+  .card {
+    &__header {
+      text-align: center;
+      background: #8482ff;
+      border-radius: 10px 10px 0px 0px;
+      padding: 30px 30px 23px;
+      height: 232px;
+      &-second {
+        background: #ff9882;
+      }
+    }
+    &__title {
+      @include text($inter, normal, 600, 30px, 36px, #fff);
+      text-align: center;
+      text-transform: uppercase;
+    }
+    &__sub {
+      @include text($inter, normal, bold, 16px, 38px, #d3d2ff);
+      width: 230px;
+      height: 39px;
+      text-align: center;
+      text-transform: uppercase;
+      display: inline-block;
+      background: #6562db;
+      border-radius: 10px;
+      margin-bottom: 24px;
+      &-second {
+        width: 85%;
+        height: 27px;
+        margin-bottom: 36px;
+        line-height: 28px;
+        background: #d87b66;
+        color: #ffdad2;
+      }
+    }
+    &__lvll {
+      @include text($inter, normal, normal, 14px, 17px, #a3a1ff);
+      text-align: start;
+      &-second {
+        color: #ffbeaf;
+      }
+    }
+    &__line {
+      width: 100%;
+      height: 6px;
+      background: #726fec;
+      margin: 5px 0 19px;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 11%;
+        background: #a3a2ff;
+      }
+      &-second {
+        background: #ffbeaf;
+        &::before {
+          background: #ffbeaf;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          right: 0;
+          top: 0;
+          height: 100%;
+          width: 11%;
+          background: #e9836d;
+        }
+      }
+    }
+    &__less {
+      display: flex;
+      justify-content: space-between;
+      &-part {
+        display: flex;
+      }
+      &-part:first-child p {
+        margin-left: 6px;
+      }
+      &-part:nth-child(2) p {
+        margin-left: 8px;
+      }
+      &-text {
+        @include text($inter, normal, 600, 14px, 20px, #fff);
+        align-items: flex-end;
+        text-align: center;
+      }
+    }
+    &__rev {
+      padding: 27px 30px 30px;
+      flex-wrap: nowrap;
+      &-text {
+        @include text($inter, normal, normal, 14px, 17px, #3e416d);
+        opacity: 0.8;
+      }
+      &-subprice {
+        margin-top: 93px;
+        justify-content: space-between;
+        display: flex;
+        bottom: 30px;
+        &-second {
+          margin-top: 59px;
+        }
+      }
+      &-price {
+        @include text($inter, normal, bold, 30px, 38px, #8482ff);
+        font-weight: bold;
+        line-height: 38px;
+        &-second {
+          color: #ff9882;
+        }
+      }
+      &-btn {
+        @include text($inter, normal, 600, 16px, 19px, #fff);
+        width: 166px;
+        height: 39px;
+        border: none;
+        outline: none;
+        background: #8482ff;
+        border-radius: 4px;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover {
+          background: #4b4a91;
+        }
+        &-second {
+          background: #ff9882;
+          &:hover {
+            background: #be6753;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.slider {
+  padding: 60px;
+  background: #3e416d;
+  .container {
+    position: relative;
+  }
+  &__title {
+    @include text($inter, normal, bold, 40px, 48px, #fff);
+    text-align: center;
+    margin-bottom: 197px;
+  }
+  &__items {
+    @include text($inter, normal, 500, 18px, 22px, #8482ff);
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #8482ff;
+    border-radius: 10px;
+    position: absolute;
+    &-or {
+      color: #ff9882;
+      background: #88635b;
+      border: 1px solid #ff9882;
+    }
+    &-opa {
+      background: #4b508d;
+    }
+    &:nth-child(2) {
+      left: 10px;
+      top: 25%;
+      opacity: 0.5;
+    }
+    &:nth-child(3) {
+      left: 40px;
+      top: 30%;
+  }
+  &__img {
+    &-txt {
+      @include text($inter, normal, bold, 40px, 48px, #fff);
+      position: absolute;
+      left: 50px;
+      top: 43%;
+      text-align: center;
+    }
+  }
+}
+
+.swiper-container {
+  width: 100%;
+  border-radius: 10px;
+}
+.swiper-scrollbar {
+  left: 33%;
+  top: 10px;
+  margin-bottom: 254px;
+  z-index: 50;
+  height: 10px;
+  width: 35%;
+}

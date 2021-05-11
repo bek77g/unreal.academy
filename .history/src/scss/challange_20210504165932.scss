@@ -1,0 +1,78 @@
+.challange {
+  padding: 57px 0 60px;
+  background: #3e416d;
+  &__box {
+    padding: 60px 130px;
+    background: #525794;
+    border: 2px solid #8482ff;
+    box-sizing: border-box;
+    border-radius: 20px;
+  }
+  &__col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 70px;
+  }
+  &__title {
+    @include text($inter, normal, bold, 40px, 48px, #fff);
+    margin-bottom: 40px;
+    text-align: stert;
+  }
+  &__sub {
+    display: flex;
+  }
+  &__fond {
+    margin-right: 66px;
+  }
+  &__optxt {
+    @include text($inter, normal, normal, 18px, 22px, #fff);
+    opacity: 0.5;
+    margin-bottom: 11px;
+  }
+  &__txt {
+    @include text($inter, normal, bold, 30px, 36px, #fff);
+    margin-bottom: 38px;
+  }
+  &__prises {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 43px;
+    &-boxes {
+      @include text($inter, normal, bold, 21.5548px, 26px, #fff);
+      padding: 10.8px 16px;
+      border-radius: 14.3698px;
+      width: 190.4px;
+      height: 100%;
+      &:first-child {
+        background: #ff9882;
+        box-shadow: 0px 10.0589px 22.9918px -7.18492px rgba(255, 152, 130, 0.5);
+      }
+      &:nth-child(2) {
+        background: #a5a5b5;
+        box-shadow: 0px 10.0589px 22.9918px -7.18492px rgba(165, 165, 181, 0.5);
+      }
+      &:last-child {
+        background: #ac8f73;
+        box-shadow: 0px 10.0589px 22.9918px -7.18492px rgba(172, 143, 115, 0.5);
+      }
+    }
+    &-txt {
+      @include text($inter, normal, normal, 12.9329px, 16px, #fff);
+      opacity: 0.5;
+    }
+  }
+  &__btn {
+    @include text($inter, normal, 600, 16px, 19px, #fff);
+    width: 182px;
+    height: 49px;
+    border: none;
+    outline: none;
+    background: #8482ff;
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover {
+      background: #4d4c92;
+    }
+  }
+}

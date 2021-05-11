@@ -1,0 +1,30 @@
+.courses {
+  padding: 47px 0 109px;
+  &__title {
+    @include text($inter, normal, bold, 40px, 48px, #3e416d);
+    text-align: center;
+    margin-bottom: 23px;
+  }
+  &__col {
+    margin: 40px 6.2px 0;
+    height: 85%;
+    padding: 17px 60px 17px 25px;
+    background-color: #e7e7ff;
+    border-radius: 10px;
+    &-number {
+      width: 82px;
+      height: 60px;
+      background-color: #8482ff;
+      border-radius: 10px;
+      margin-bottom: 25px;
+    }
+    &-title {
+      @include text($inter, normal, bold, 40px, 63px, #fff);
+      text-align: center;
+    }
+    &-subtitle {
+      @include text($inter, normal, normal, 16px, 19px, #3e416d);
+      opacity: 0.8;
+    }
+  }
+}

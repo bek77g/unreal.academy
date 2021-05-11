@@ -1,0 +1,64 @@
+.footer {
+  background: #1a1b30;
+  padding: 45px 0 32px;
+  position: relative;
+  &::before {
+    content: "";
+    background: url(../images/footer/footBG.svg) top center/100% 100% no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo {
+    @include text($inter, normal, normal, 13px, 21px, #8482ff);
+    &-part {
+      color: #fff;
+    }
+    &-part2 {
+      margin-top: 10px;
+    }
+    &-txt {
+      @include text($inter, normal, normal, 14px, 17px, #8482ff);
+      width: 123px;
+      margin-top: 26px;
+    }
+  }
+  &__mnu {
+    display: flex;
+    margin-top: 3px;
+    column-gap: 25px;
+    &-item a {
+      @include text($inter, normal, normal, 16px, 19px, #fff);
+    }
+  }
+  &__crs {
+    display: flex;
+    margin-top: 26px;
+    &-rt {
+      @include text($inter, normal, normal, 14px, 17px, #8482ff);
+      text-decoration-line: underline;
+      margin-right: 25px;
+      &:last-child {
+        color: #ff9882;
+        margin-right: 0;
+      }
+    }
+  }
+  &__socs {
+    width: 79px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__end {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 121px;
+    &-txt {
+      @include text($inter, normal, normal, 14px, 17px, #8482ff);
+    }
+  }
+}

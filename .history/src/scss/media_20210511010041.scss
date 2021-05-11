@@ -1,0 +1,137 @@
+@media (max-width: 1300px) {
+  .features::before {
+    bottom: -35%;
+    right: 0;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+  .header__mnu-item {
+    margin-right: 37px;
+  }
+  .devstart__row {
+    width: 77%;
+  }
+  .certificate__title {
+    font-size: 35px;
+  }
+  .certificate__des {
+    font-size: 16px;
+  }
+  .certificate__sub-title {
+    font-size: 17px;
+  }
+  .certificate__sub-cov {
+    font-size: 15px;
+  }
+  .challange__prises-boxes {
+    white-space: nowrap;
+    margin-right: 10px;
+    max-width: 642px;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    max-width: 960px;
+  }
+  .challange__col {
+    padding: 0;
+  }
+  .challange__col2 {
+    text-align: center;
+  }
+  .challange__sub {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+  .courses__col {
+    padding: 17px 30px 17px 25px;
+  }
+  .courses__playbtn {
+    padding: 17px 50px 17px 25px;
+  }
+  .certificate__col:last-child,
+  .certificate__title,
+  .certificate__des,
+  .certificate__sub,
+  .challange__title,
+  .challange__title {
+    text-align: center;
+  }
+  .certificate__sub {
+    width: 480px;
+    margin: 0 auto;
+  }
+  .devstart__card {
+    width: 400px;
+    margin: 0 auto;
+  }
+  .features::before {
+    content: "";
+    background: url(../images/features/bfF.svg) top center/100% 100% no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 35%;
+    right: 0;
+    z-index: -1;
+    bottom: -70px;
+  }
+  .features__mcol:last-child {
+    margin: 47px auto 0;
+  }
+  .footer__middle,
+  .footer__nav {
+    justify-content: space-between;
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .lector__content {
+    width: 100%;
+    text-align: center;
+    margin-top: -80px;
+    margin-left: 0;
+    display: block;
+  }
+  .lector__first,
+  .lector__second {
+    width: 100%;
+    display: flex;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .lector__second .lector__descrs:first-child,
+  .lector__second .lector__descrs:nth-child(2) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .lector__second .lector__descrs:nth-child(2) {
+    margin-top: 60px;
+  }
+  .lector__first .lector__descrs:first-child {
+    margin-top: 40px;
+    margin-right: -50px;
+    margin-left: 30px;
+  }
+  .lector__first .lector__descrs:nth-child(2) {
+    margin-right: 0;
+    margin-top: -40px;
+  }
+  .lector__first .lector__descrs:nth-child(3) {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+  .lector {
+    display: none;
+  }
+}

@@ -1,0 +1,31 @@
+.basket {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__card {
+    width: 841px;
+    height: 849px;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+  }
+  &__header {
+    padding: 21px 25.5px 23.5px 34px;
+    width: 100%;
+    height: 69px;
+    display: flex;
+    background: #8482ff;
+  }
+  &__logo {
+    display: flex;
+    &-title {
+      @include text($inter, normal, 600, 18px, 22px, #fff);
+      text-align: center;
+      text-transform: uppercase;
+    }
+    &-img {
+      filter: invert(100%);
+    }
+  }
+}

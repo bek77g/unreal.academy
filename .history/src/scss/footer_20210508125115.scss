@@ -1,0 +1,13 @@
+.footer {
+  background: #1a1b30;
+  height: 324px;
+}
+
+.swiper-container-horizontal > .swiper-scrollbar {
+  position: absolute;
+  left: 1%;
+  bottom: 3px;
+  z-index: 50;
+  height: 5px;
+  width: 33%;
+}
